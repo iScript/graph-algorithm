@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="" />
+    <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GraphDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SingleSourcePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/g.txt" beforeDir="false" afterPath="$PROJECT_DIR$/g.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XTlNkmLLWAP1VPWbGL3WjuwwMg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,6 +34,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -32,23 +45,16 @@
       <recent name="C:\Users\ykq\Desktop\Graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Graph">
-    <configuration name="AdjacencyList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AdjacencyList" />
-      <module name="Graph" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdjacencyMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AdjacencyMatrix" />
-      <module name="Graph" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SingleSourcePath">
     <configuration name="AdjacencySet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AdjacencySet" />
+      <module name="Graph" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CC" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,12 +67,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphDFS" />
+      <module name="Graph" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingleSourcePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SingleSourcePath" />
+      <module name="Graph" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SingleSourcePath" />
+        <item itemvalue="Application.CC" />
+        <item itemvalue="Application.GraphDFS" />
         <item itemvalue="Application.Graph" />
         <item itemvalue="Application.AdjacencySet" />
-        <item itemvalue="Application.AdjacencyList" />
-        <item itemvalue="Application.AdjacencyMatrix" />
       </list>
     </recent_temporary>
   </component>
@@ -88,21 +109,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="502" y="174" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581077941787" />
-    <state width="1717" height="271" key="GridCell.Tab.0.bottom" timestamp="1581150859214">
+    <state x="752" y="366" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1581215076985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581150859214" />
-    <state width="1717" height="271" key="GridCell.Tab.0.center" timestamp="1581150859214">
+    <state x="752" y="366" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581215076985" />
+    <state width="1717" height="285" key="GridCell.Tab.0.bottom" timestamp="1581240818928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581150859214" />
-    <state width="1717" height="271" key="GridCell.Tab.0.left" timestamp="1581150859214">
+    <state width="1717" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818928" />
+    <state width="1717" height="285" key="GridCell.Tab.0.center" timestamp="1581240818927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581150859214" />
-    <state width="1717" height="271" key="GridCell.Tab.0.right" timestamp="1581150859214">
+    <state width="1717" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818927" />
+    <state width="1717" height="285" key="GridCell.Tab.0.left" timestamp="1581240818927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581150859214" />
+    <state width="1717" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818927" />
+    <state width="1717" height="285" key="GridCell.Tab.0.right" timestamp="1581240818928">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1717" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818928" />
+    <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581229348893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="653" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581229348893" />
+    <state x="1424" y="267" key="run.anything.popup" timestamp="1581238642836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1424" y="267" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1581238642836" />
   </component>
 </project>
