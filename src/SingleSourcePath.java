@@ -1,13 +1,11 @@
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 // 单源路径
 public class SingleSourcePath {
     private Graph G;
     private int s;
     private boolean[] visited;
-    private int[] pre;
+    private int[] pre;  //上一个点
 
 
     public SingleSourcePath(Graph G , int s){
@@ -20,8 +18,8 @@ public class SingleSourcePath {
         for(int i=0;i<pre.length;i++)
             pre[i] = -1;
 
-        dfs(s,s);
-
+        //dfs(s,s);
+        bfs(s);
     }
 
     // 深度优先遍历
@@ -32,6 +30,28 @@ public class SingleSourcePath {
         for(int w : G.adj(v)){
             if(!visited[w])
                 dfs(w,v);
+        }
+    }
+
+    // 广度优先遍历
+    private void bfs(int s){
+        Queue<Integer> queue = new LinkedList<>();  // LinkedList 实现了queue接口
+
+        // 入队并标记访问
+        queue.add(s);
+        visited[s] = true;
+        pre[s] = s;
+
+        while(!queue.isEmpty()){
+            int v = queue.remove(); //从队列取出元素
+            for(int w:G.adj(v)){
+                if(!visited[w]) {
+                    // 入队并标记访问
+                    queue.add(w);
+                    visited[w] = true;
+                    pre[w] = v;
+                }
+            }
         }
     }
 
