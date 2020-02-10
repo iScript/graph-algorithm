@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GraphDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SingleSourcePath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/g2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BipartitionDetection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CycleDetection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Path.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/g.txt" beforeDir="false" afterPath="$PROJECT_DIR$/g.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graph/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +42,9 @@
       <recent name="C:\Users\ykq\Desktop\Graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SingleSourcePath">
-    <configuration name="AdjacencySet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AdjacencySet" />
+  <component name="RunManager" selected="Application.BipartitionDetection">
+    <configuration name="BipartitionDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BipartitionDetection" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,15 +57,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Graph" />
+    <configuration name="CycleDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CycleDetection" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GraphDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphDFS" />
+    <configuration name="Path" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Path" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +80,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BipartitionDetection" />
+        <item itemvalue="Application.CycleDetection" />
+        <item itemvalue="Application.Path" />
         <item itemvalue="Application.SingleSourcePath" />
         <item itemvalue="Application.CC" />
-        <item itemvalue="Application.GraphDFS" />
-        <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.AdjacencySet" />
       </list>
     </recent_temporary>
   </component>
@@ -113,22 +110,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="366" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581215076985" />
-    <state width="1717" height="285" key="GridCell.Tab.0.bottom" timestamp="1581240818928">
+    <state width="1591" height="285" key="GridCell.Tab.0.bottom" timestamp="1581295891827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818928" />
-    <state width="1717" height="285" key="GridCell.Tab.0.center" timestamp="1581240818927">
+    <state width="1591" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581295891827" />
+    <state width="1591" height="285" key="GridCell.Tab.0.center" timestamp="1581295891827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818927" />
-    <state width="1717" height="285" key="GridCell.Tab.0.left" timestamp="1581240818927">
+    <state width="1591" height="285" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581295891827" />
+    <state width="1591" height="285" key="GridCell.Tab.0.left" timestamp="1581295891827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818927" />
-    <state width="1717" height="285" key="GridCell.Tab.0.right" timestamp="1581240818928">
+    <state width="1591" height="285" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581295891827" />
+    <state width="1591" height="285" key="GridCell.Tab.0.right" timestamp="1581295891827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1717" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581240818928" />
+    <state width="1591" height="285" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581295891827" />
     <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581229348893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
