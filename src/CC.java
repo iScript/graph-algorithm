@@ -34,9 +34,9 @@ public class CC {
     // 返回几个联通分量
     public int count(){
         for(int e : visited){
-            System.out.print(e + " ");
+            //System.out.print(e + " ");
         }
-        System.out.println();
+
         return cccount;
     }
 

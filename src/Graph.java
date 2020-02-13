@@ -4,7 +4,7 @@ import java.util.TreeSet;
 import java.util.Scanner;
 
 // 邻接表 , 使用红黑树实现作为默认的建图类 , 另外还有2种邻接矩阵和链表实现的邻接表
-public class Graph {
+public class Graph implements  Cloneable{
 
     private int V;  // 顶点
     private int E;  // 边
@@ -80,6 +80,14 @@ public class Graph {
     }
 
 
+    public void removeEdge(int v,int w){
+        validateVertex(v);
+        validateVertex(w);
+
+        adj[v].remove(w);
+        adj[w].remove(v);
+    }
+
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
@@ -92,6 +100,27 @@ public class Graph {
             sb.append('\n');
         }
         return sb.toString();
+    }
+
+    @Override
+    public Object clone(){
+
+        try{
+            Graph cloned = (Graph)super.clone();
+            cloned.adj = new TreeSet[V];
+            for(int v = 0; v < V; v ++){
+                cloned.adj[v] = new TreeSet<Integer>();
+                for(int w: adj[v])
+                    cloned.adj[v].add(w);
+            }
+            return  cloned;
+
+        }catch(CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+
+        return null;
+
     }
 
     public static void main(String[] args){
