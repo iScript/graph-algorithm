@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/g5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EulerLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/g6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
       <recent name="C:\Users\ykq\Desktop\Graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EulerLoop">
+  <component name="RunManager" selected="Application.WeightedGraph">
     <configuration name="EulerLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EulerLoop" />
       <module name="Graph" />
@@ -52,13 +50,6 @@
     </configuration>
     <configuration name="FindBridges" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FindBridges" />
-      <module name="Graph" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GraphBFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphBFS" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,13 +69,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WeightedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="WeightedGraph" />
+      <module name="Graph" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WeightedGraph" />
         <item itemvalue="Application.EulerLoop" />
         <item itemvalue="Application.HamiltonLoop" />
         <item itemvalue="Application.FindBridges" />
         <item itemvalue="Application.SingleSourcePath" />
-        <item itemvalue="Application.GraphBFS" />
       </list>
     </recent_temporary>
   </component>
@@ -130,10 +128,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1613" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581603900919" />
-    <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581488092087">
+    <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581660107331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="653" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581488092087" />
+    <state x="653" y="361" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581660107331" />
     <state x="1424" y="267" key="run.anything.popup" timestamp="1581573630864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
