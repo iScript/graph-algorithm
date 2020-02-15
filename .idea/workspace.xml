@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/g6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeightedGraph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Kruskal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WeightedEdge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,10 +105,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="502" y="174" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581077941787" />
-    <state x="1530" y="460" key="#com.intellij.ide.util.MemberChooser" timestamp="1581599220189">
+    <state x="1530" y="460" key="#com.intellij.ide.util.MemberChooser" timestamp="1581778534664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1530" y="460" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581599220189" />
+    <state x="1530" y="460" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581778534664" />
     <state x="752" y="366" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1581215076985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
