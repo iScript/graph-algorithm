@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a84f387b-0cec-4a31-a16b-cb22cad28e06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Prim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/g7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BellmanFord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dijkstra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Graph/WeightedGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Graph/WeightedGraph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WeightedEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WeightedEdge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +41,16 @@
       <recent name="C:\Users\ykq\Desktop\Graph" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prim">
-    <configuration name="EulerLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EulerLoop" />
+  <component name="RunManager" selected="Application.BellmanFord">
+    <configuration name="BellmanFord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BellmanFord" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HamiltonLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HamiltonLoop" />
+    <configuration name="Dijkstra" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Dijkstra" />
       <module name="Graph" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,11 +79,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BellmanFord" />
+        <item itemvalue="Application.Dijkstra" />
         <item itemvalue="Application.Prim" />
         <item itemvalue="Application.Kruskal" />
         <item itemvalue="Application.WeightedGraph" />
-        <item itemvalue="Application.EulerLoop" />
-        <item itemvalue="Application.HamiltonLoop" />
       </list>
     </recent_temporary>
   </component>
@@ -114,22 +113,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="752" y="366" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581215076985" />
-    <state width="1396" height="268" key="GridCell.Tab.0.bottom" timestamp="1581814926137">
+    <state width="1396" height="268" key="GridCell.Tab.0.bottom" timestamp="1581840097787">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1396" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581814926137" />
-    <state width="1396" height="268" key="GridCell.Tab.0.center" timestamp="1581814926137">
+    <state width="1396" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581840097787" />
+    <state width="1396" height="268" key="GridCell.Tab.0.center" timestamp="1581840097786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1396" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581814926137" />
-    <state width="1396" height="268" key="GridCell.Tab.0.left" timestamp="1581814926137">
+    <state width="1396" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581840097786" />
+    <state width="1396" height="268" key="GridCell.Tab.0.left" timestamp="1581840097786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1396" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581814926137" />
-    <state width="1396" height="268" key="GridCell.Tab.0.right" timestamp="1581814926137">
+    <state width="1396" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581840097786" />
+    <state width="1396" height="268" key="GridCell.Tab.0.right" timestamp="1581840097786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1396" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581814926137" />
+    <state width="1396" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581840097786" />
     <state x="653" y="361" key="com.intellij.ide.util.TipDialog" timestamp="1581660107331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
