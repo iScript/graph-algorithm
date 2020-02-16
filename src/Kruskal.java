@@ -44,7 +44,7 @@ public class Kruskal {
 
     public static void main(String[] args){
 
-        WeightedGraph g = new WeightedGraph("g.txt");
+        WeightedGraph g = new WeightedGraph("g6.txt");
         Kruskal kruskal = new Kruskal(g);
         System.out.println(kruskal.result());
     }
