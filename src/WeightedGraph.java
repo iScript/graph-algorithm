@@ -10,8 +10,10 @@ public class WeightedGraph implements  Cloneable{
     private int V;  // 顶点
     private int E;  // 边
     private TreeMap<Integer,Integer>[] adj; //adj数组，里面保存着TreeMap。treemap参数 相邻的顶点 ，权值
+    private  boolean directed;
 
-    public WeightedGraph(String filename) {
+    public WeightedGraph(String filename,boolean directed) {
+        this.directed = directed;
         File file = new File(filename);
         if(!file.exists()) throw new IllegalArgumentException("文件不存在");
 
@@ -45,6 +47,13 @@ public class WeightedGraph implements  Cloneable{
 
     }
 
+    public WeightedGraph(String filename){
+        this(filename,false);
+    }
+
+    public boolean isDirected(){
+        return directed;
+    }
 
     public void validateVertex(int v){
         if(v < 0 || v >= V)
@@ -83,6 +92,7 @@ public class WeightedGraph implements  Cloneable{
     }
 
     // 返回一个顶点的度，即顶点相邻的点有几个
+    // ?
     public int degree(int v){
         validateVertex(v);
         return adj[v].size();
@@ -119,7 +129,7 @@ public class WeightedGraph implements  Cloneable{
     public String toString(){
         StringBuilder sb = new StringBuilder();
 
-        sb.append(String.format("V = %d, E = %d\n", V, E));
+        sb.append(String.format("V = %d, E = %d , directed = %b \n", V, E,directed));
         for(int i = 0; i < V; i ++){
             sb.append(String.format("%d :", i));
             for(Map.Entry<Integer,Integer> entry : adj[i].entrySet() ) //遍历map

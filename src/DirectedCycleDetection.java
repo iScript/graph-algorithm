@@ -1,17 +1,17 @@
-import java.util.ArrayList;
-
-public class CycleDetection {
-
+// 有向图的环检测
+public class DirectedCycleDetection {
     private Graph G;
     private boolean[] visited;
+    private boolean[] onPath;   //是否在当前搜索路径上
     private boolean hasCycle = false;
 
-    public CycleDetection(Graph G){
-        if(G.isDirected())
-            throw new IllegalArgumentException("只支持无向图");
+    public DirectedCycleDetection(Graph G){
+        if(!G.isDirected())
+            throw new IllegalArgumentException("只支持有向图");
 
         this.G = G;
         visited = new boolean[G.V()];
+        onPath = new boolean[G.V()];
 
         // 多包一层for，防止有多个联通分量
         for(int v = 0 ;v<G.V();v++){
@@ -26,13 +26,18 @@ public class CycleDetection {
     // 从顶点v开始，判断图中是否有环
     private boolean dfs(int v,int parent){
         visited[v] = true;
+        onPath[v] = true;
+
         // 遍历相邻节点
         for(int w : G.adj(v)){
-            if(!visited[w])
-                if(dfs(w,v)) return true;           //
-            else if(w != parent)    // 判断是否有环：一个相邻节点w被访问过并且 该相邻节点w不是当前节点v的上个节点，则说明有环
-                return true;
+            if(!visited[w]) {
+                if (dfs(w, v)) return true;           //
+            }else if( onPath[w])    // 判断是否有环：不是父级且在搜索路径上
+                    return true;
         }
+
+        onPath[v] = false;
+
         return false;
     }
 
@@ -44,12 +49,9 @@ public class CycleDetection {
 
     public static void main(String[] args){
 
-        Graph g = new Graph("g.txt");
-        CycleDetection cycleDetection = new CycleDetection(g);
-        System.out.println(cycleDetection.hasCycle());
 
         Graph g2 = new Graph("g8.txt",true);
-        CycleDetection cycleDetection2 = new CycleDetection(g2);
+        DirectedCycleDetection cycleDetection2 = new DirectedCycleDetection(g2);
         System.out.println(cycleDetection2.hasCycle());
 
     }

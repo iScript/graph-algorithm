@@ -9,8 +9,19 @@ public class Graph implements  Cloneable{
     private int V;  // 顶点
     private int E;  // 边
     private TreeSet<Integer>[] adj;    // 领接表
+    private  boolean directed;
+    private  int[] indegrees,outdegrees; // 有向图的出度和入度
 
-    public Graph(String filename) {
+
+    // 默认无向图
+    public Graph(String filename){
+        this(filename,false);
+    }
+
+    // 更新支持有向图
+    public Graph(String filename,boolean directed) {
+        this.directed = directed;
+
         File file = new File(filename);
         if(!file.exists()) throw new IllegalArgumentException("文件不存在");
 
@@ -24,6 +35,9 @@ public class Graph implements  Cloneable{
                 adj[i] = new TreeSet<Integer>();
             }
 
+            indegrees = new int[V];
+            outdegrees = new int[V];
+
             E = scanner.nextInt();          // 第一行的第二值个为边
             if(E < 0) throw new IllegalArgumentException("E must be non-negative");
             for(int i = 0; i < E; i ++){    //
@@ -34,7 +48,14 @@ public class Graph implements  Cloneable{
                 if(adj[a].contains(b)) throw new IllegalArgumentException("Parallel Edges are Detected!");  // 判断平行边
 
                 adj[a].add(b);
-                adj[b].add(a);
+                if(directed){
+                    // 统计入度和出度
+                    outdegrees[a]++;
+                    indegrees[b]++;
+                }
+
+                if(!directed)
+                    adj[b].add(a);
             }
         }
         catch(IOException e){
@@ -43,6 +64,9 @@ public class Graph implements  Cloneable{
 
     }
 
+    public boolean isDirected(){
+        return directed;
+    }
 
     public void validateVertex(int v){
         if(v < 0 || v >= V)
@@ -75,8 +99,25 @@ public class Graph implements  Cloneable{
 
     // 返回一个顶点的度，即顶点相邻的点有几个
     public int degree(int v){
+        //如果是有向图
+        if(directed)
+            throw new IllegalArgumentException("只支持无向图");
         validateVertex(v);
         return adj[v].size();
+    }
+
+    public int indegree(int v){
+        if(!directed)
+            throw new RuntimeException("indegree only works in directed graph.");
+        validateVertex(v);
+        return indegrees[v];
+    }
+
+    public int outdegree(int v){
+        if(!directed)
+            throw new RuntimeException("outdegree only works in directed graph.");
+        validateVertex(v);
+        return outdegrees[v];
     }
 
 
@@ -84,15 +125,24 @@ public class Graph implements  Cloneable{
         validateVertex(v);
         validateVertex(w);
 
+        if(adj[v].contains(w)){
+            E --;
+            if(directed){
+                indegrees[w] --;
+                outdegrees[v] --;
+            }
+        }
+
         adj[v].remove(w);
-        adj[w].remove(v);
+        if(!directed)
+            adj[w].remove(v);
     }
 
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
 
-        sb.append(String.format("V = %d, E = %d\n", V, E));
+        sb.append(String.format("V = %d, E = %d , directed = %b \n", V, E,directed));
         for(int i = 0; i < V; i ++){
             sb.append(String.format("%d :", i));
             for(int w : adj[i])
@@ -125,7 +175,10 @@ public class Graph implements  Cloneable{
 
     public static void main(String[] args){
 
-        Graph graph = new Graph("g.txt");
+//        Graph graph = new Graph("g.txt");
+//        System.out.print(graph);
+
+        Graph graph = new Graph("g8.txt",true);
         System.out.print(graph);
     }
 }
