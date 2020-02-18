@@ -26,19 +26,15 @@ public class WeightedGraph implements  Cloneable{
             for(int i = 0; i < V; i ++){
                 adj[i] = new TreeMap<Integer,Integer>();    // 数组里保存着treeMap
             }
-
-            E = scanner.nextInt();
-            if(E < 0) throw new IllegalArgumentException("E must be non-negative");
-            for(int i = 0; i < E; i ++){    //
+            E = 0;
+            int e = scanner.nextInt();
+            if(e < 0) throw new IllegalArgumentException("E must be non-negative");
+            for(int i = 0; i < e; i ++){    //
                 int a = scanner.nextInt();validateVertex(a);
                 int b = scanner.nextInt();validateVertex(b);
                 int weight = scanner.nextInt(); //一行的第三个值是权重
 
-                if(a == b) throw new IllegalArgumentException("Self Loop is Detected!");    // 判断自环边
-                if(adj[a].containsKey(b)) throw new IllegalArgumentException("Parallel Edges are Detected!");  // 判断平行边
-
-                adj[a].put(b,weight);   // adj[x]顶点是一个TreeMap，每个顶点对应着相连的顶点和权重
-                adj[b].put(a,weight);
+                addEdge(a,b,weight);
             }
         }
         catch(IOException e){
@@ -49,6 +45,32 @@ public class WeightedGraph implements  Cloneable{
 
     public WeightedGraph(String filename){
         this(filename,false);
+    }
+
+    // 没有边的图
+    public WeightedGraph(int V, boolean directed){
+        this.V = V;
+        this.directed = directed;
+        this.E = 0;
+
+        adj = new TreeMap[V];
+        for(int i = 0; i < V; i ++)
+            adj[i] = new TreeMap<Integer, Integer>();
+    }
+
+    // 添加边
+    public void addEdge(int a, int b, int v){
+
+        validateVertex(a);
+        validateVertex(b);
+
+        if(a == b) throw new IllegalArgumentException("Self Loop is Detected!");
+        if(adj[a].containsKey(b)) throw new IllegalArgumentException("Parallel Edges are Detected!");
+
+        adj[a].put(b, v);
+        if(!directed)
+            adj[b].put(a, v);
+        this.E ++;
     }
 
     public boolean isDirected(){
@@ -90,6 +112,19 @@ public class WeightedGraph implements  Cloneable{
             return adj[v].get(w);
         throw new IllegalArgumentException(String.format("no edge %d %d",v,w));
     }
+
+    public void setWeight(int v, int w, int newWeight){
+        if(!hasEdge(v, w))
+            throw new IllegalArgumentException(String.format("No edge %d-%d", v, w));
+
+        adj[v].put(w, newWeight);
+        if(!directed)
+            adj[w].put(v, newWeight);
+    }
+
+
+
+
 
     // 返回一个顶点的度，即顶点相邻的点有几个
     // ?
